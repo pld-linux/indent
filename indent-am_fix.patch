@@ -1,0 +1,9 @@
+--- indent-2.2.8/man/Makefile.am~	Tue May 14 01:59:54 2002
++++ indent-2.2.8/man/Makefile.am	Tue May 14 01:59:54 2002
+@@ -11,5 +11,5 @@
+ MAINTAINERCLEANFILES = @PACKAGE@.1 Makefile.in texinfo2man 
+ 
+ @PACKAGE@.1: @PACKAGE@.1.in ../doc/@PACKAGE@.texinfo texinfo2man  Makefile
+-	texinfo2man @PACKAGE@.1.in ../doc/@PACKAGE@.texinfo > $@
++	./texinfo2man @PACKAGE@.1.in ../doc/@PACKAGE@.texinfo > $@
+ 
