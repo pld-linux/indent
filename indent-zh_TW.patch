@@ -1,0 +1,11 @@
+--- indent-2.2.8a/configure.ac.orig	Tue May 21 18:39:33 2002
++++ indent-2.2.8a/configure.ac	Fri Jan 31 12:20:45 2003
+@@ -33,7 +33,7 @@
+ AC_PATH_PROG(TEXI2HTML, texi2html, $ac_aux_dir_abs/missing texi2html)
+ 
+ dnl Needed for the gettext support:
+-ALL_LINGUAS="ca da de eo et fr gl ja ko nl pl pt_BR ru sk sv tr zh_TW.Big5"
++ALL_LINGUAS="ca da de eo et fr gl ja ko nl pl pt_BR ru sk sv tr zh_TW"
+ dnl These are the only lines required to internationalize the package.
+ dnl (OK, not quite, the AC_OUTPUT has also some parts.)
+ AM_GNU_GETTEXT
