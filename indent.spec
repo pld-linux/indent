@@ -22,7 +22,7 @@ Patch1:		%{name}-po-fix.patch
 Patch2:		%{name}-pl.po-update.patch
 Patch3:		%{name}-zh_TW.patch
 Patch4:		%{name}-make-jN.patch
-URL:		http://home.hccnet.nl/d.ingamells/beautify.html
+URL:		http://mysite.freeserve.com/indent/beautify.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
