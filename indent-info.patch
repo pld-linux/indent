@@ -1,17 +1,18 @@
-diff -Nru indent-1.10.0/indent.texinfo indent-1.10.0.new/indent.texinfo
---- indent-1.10.0/indent.texinfo	Wed May 26 19:54:29 1999
-+++ indent-1.10.0.new/indent.texinfo	Wed Jun 30 20:57:34 1999
-@@ -14,6 +14,13 @@
- @synindex cp ky
+diff -Nru indent-2.2.4/indent.texinfo indent-2.2.4.new/indent.texinfo
+--- indent-2.2.4/indent.texinfo	Tue Jan 11 22:49:20 2000
++++ indent-2.2.4.new/indent.texinfo	Tue Jan 11 22:52:24 2000
+@@ -15,10 +15,12 @@
  @setchapternewpage odd
  
-+@format
-+@dircategory File utilities:
-+@direntry
-+* indent: (indent).			Program to format source code
-+@end direntry
-+@end format
-+
  @ifinfo
+-@dircategory Indent Code Formatter
++@format
++@dircategory Text Processing Tools:
+ @direntry
+-* Indent: (indent).		C code formatter.
++* indent: (indent).			Program to format C source code
+ @end direntry
++@end format
+ 
  @c !BEGIN INTRO
- This is Edition @value{EDITION} of @cite{The @code{indent} Manual},
+ This is Edition @value{EDITION} of @cite{The @command{indent} Manual},
