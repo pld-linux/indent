@@ -3,15 +3,16 @@ Summary(cs):	Odsazovací program GNU C
 Summary(da):	GNU C indenterings-program
 Summary(de):	GNU C-Indenting-Programm
 Summary(fi):	GNU:n sisennysohjelma
-Summary(fr):	Programme d'indentation C de GNU.
+Summary(fr):	Programme d'indentation C de GNU
 Summary(it):	Programma della GNU per l'indentazione dei sorgenti C
 Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
-Version:	2.2.4
-Release:	2
+Version:	2.2.5
+Release:	1
 License:	GPL
 Group:		Development/Tools
+Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source:		ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		indent-info.patch
