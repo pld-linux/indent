@@ -1,11 +1,15 @@
 Summary:	GNU C indenting program
-Summary(de):	GNU C-Indenting-Programm  
-Summary(fr):	Programme d'indentation C de GNU
+Summary(cs):	Odsazovací program GNU C
+Summary(da):	GNU C indenterings-program
+Summary(de):	GNU C-Indenting-Programm
+Summary(fi):	GNU:n sisennysohjelma
+Summary(fr):	Programme d'indentation C de GNU.
+Summary(it):	Programma della GNU per l'indentazione dei sorgenti C
 Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
 Version:	2.2.0
-Release:	1
+Release:	2
 Copyright:	GPL
 Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
@@ -15,19 +19,37 @@ Prereq:		/sbin/install-info
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-This is the GNU indenting program. It is used to beautify C program source
-files.
+Indent is a GNU program for beautifying C code, so that it is easier to
+read. Indent can also convert from one C writing style to a different one. 
+Indent understands correct C syntax and tries to handle incorrect C syntax.
+
+%description -l cs
+Toto je odsazovací program GNU. Pou¾ívá se ke zkrá¹lení zdrojových souborù v
+programech C.
+
+%description -l da
+GNU indenterings-program. Det bruges til at få C kildetekster til at se
+pænere (og mere læsbare) ud
 
 %description -l de
 Das GNU-Indenting-Programm. Zur Verschönerung Ihrer
 C-Programmquelldateienattraktiver aussehen!
 
+%description -l fi
+Tämä on GNU:n sisennysohjelma. Sitä käytetään C-ohjelmakoodin muotoiluun.
+
 %description -l fr
 Programme d'indentation de GNU. Utilisé pour embellir les fichiers source C.
 
+%description -l it
+Questo e' un programma per l'indentazione della GNU. E' usato per abbellire
+i file sorgenti in C dei programmi.
+
 %description -l pl
-GNU program formatuj±cy ¼ród³a w C. Wyrównuje wciêcia itp., tak ¿eby
-kod ¼ród³owy ³adniej wygl±da³.
+GNU program formatuj±cy ¼ród³a w C, które po takiej czynno¶ci ³atwiej siê
+czyta. Indent umo¿liwia tak¿e konwersjê miêdzy ró¿nymi stylami zapisu kodu
+¼ród³owego w C. Program ten rozumie poprawna sk³adniê kodu ¼ród³owego C i
+stara siê tak¿e formatowaæ tak¿e kod który jest niepoprawny sk³adniowo.
 
 %description -l tr
 Bu paket bir C programýnýn kaynak kodunu güzelleþtirmek için kullanýlýr.
@@ -51,12 +73,10 @@ gzip -9nf $RPM_BUILD_ROOT{%{_infodir}/*,%{_mandir}/man1/*}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-/sbin/install-info %{_infodir}/indent.info.gz /etc/info-dir
+/usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
-%preun
-if [ "$1" = 0 ]; then
-	/sbin/install-info --delete %{_infodir}/indent.info.gz /etc/info-dir
-fi
+%postun
+/usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %files
 %defattr(644,root,root,755)
