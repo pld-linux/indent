@@ -9,7 +9,7 @@ Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
 Version:	2.2.5
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -17,6 +17,7 @@ Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
+Patch1:		%{name}-npsl_bug.patch
 URL:		http://www.xs4all.nl/~carlo17/indent/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -64,6 +65,7 @@ kullanýlýr.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure
