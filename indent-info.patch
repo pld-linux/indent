@@ -1,0 +1,44 @@
+diff -Nru indent-1.10.0/indent.texinfo indent-1.10.0.new/indent.texinfo
+--- indent-1.10.0/indent.texinfo	Wed May 26 19:54:29 1999
++++ indent-1.10.0.new/indent.texinfo	Wed Jun 30 20:57:34 1999
+@@ -14,6 +14,13 @@
+ @synindex cp ky
+ @setchapternewpage odd
+ 
++@format
++@dircategory File utilities:
++@direntry
++* indent: (indent)			Program to format source code
++@end direntry
++@end format
++
+ @ifinfo
+ @c !BEGIN INTRO
+ This is Edition @value{EDITION} of @cite{The @code{indent} Manual},
+@@ -1249,7 +1256,7 @@
+ @item -bs
+ @itemx --blank-before-sizeof
+ Put a space between @code{sizeof} and its argument.@*
+-@xref{Statements}
++@xref{Statements}.
+ 
+ @item -d@var{n}
+ @itemx --line-comments-indentation@var{n}
+@@ -1270,7 +1277,7 @@
+ @item -fca
+ @itemx --format-all-comments
+ Do not disable all formatting of comments.@*
+-@xref{Comments}
++@xref{Comments}.
+ 
+ @item -gnu
+ @itemx --gnu-style
+@@ -1364,7 +1371,7 @@
+ @item -nip
+ @itemx --no-parameter-indentation
+ Zero width indentation for parameters.@*
+-@xref{Indentation}
++@xref{Indentation}.
+ 
+ @item -nlp
+ @itemx --dont-line-up-parentheses
