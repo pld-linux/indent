@@ -12,14 +12,17 @@ Summary(tr):	GNU C girintilendirme programЩ
 Summary(uk):	Програма GNU для форматування вих╕дних текст╕в на C
 Name:		indent
 Version:	2.2.8a
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Source0:	http://home.hccnet.nl/d.ingamells/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-po-fix.patch
 Patch2:		%{name}-pl.po-update.patch
+Patch3:		%{name}-zh_TW.patch
 URL:		http://home.hccnet.nl/d.ingamells/beautify.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -87,8 +90,16 @@ Indent - це програма GNU для "прикрашення" вих╕дних текст╕в програм на
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
+
+mv -f po/zh_TW{.Big5,}.po
+mv -f intl/libgettext.h src
 
 %build
+%{__gettextize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
