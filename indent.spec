@@ -1,15 +1,15 @@
-Summary:     GNU C indenting program
-Summary(de): GNU C-Indenting-Programm  
-Summary(fr): Programme d'indentation C de GNU
-Summary(pl): GNU program formatuj±cy ¼ród³a w C
-Summary(tr): GNU C girintilendirme programý
-Name:        indent
-Version:     1.10.0
-Release:     1
-Copyright:   GPL
-Group:       Development/Tools
-Source:      ftp://prep.ai.mit.edu/pub/gnu/%{name}-%{version}.tar.gz
-Prereq:      /sbin/install-info
+Summary:	GNU C indenting program
+Summary(de):	GNU C-Indenting-Programm  
+Summary(fr):	Programme d'indentation C de GNU
+Summary(pl):	GNU program formatuj±cy ¼ród³a w C
+Summary(tr):	GNU C girintilendirme programý
+Name:		indent
+Version:	1.10.0
+Release:	1
+Copyright:	GPL
+Group:		Development/Tools
+Source:		ftp://prep.ai.mit.edu/pub/gnu/%{name}-%{version}.tar.gz
+Prereq:		/sbin/install-info
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
