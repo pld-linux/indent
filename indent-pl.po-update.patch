@@ -1,94 +1,95 @@
---- indent-2.2.8a/po/pl.po.orig	Mon Nov 11 22:21:29 2002
-+++ indent-2.2.8a/po/pl.po	Mon Nov 11 22:36:32 2002
-@@ -1,12 +1,13 @@
+--- indent-2.2.9/po/pl.po.orig	2002-12-16 17:14:37.000000000 +0100
++++ indent-2.2.9/po/pl.po	2003-04-21 19:49:18.000000000 +0200
+@@ -1,27 +1,26 @@
  # Polish translation for indent-1.9.1a
  # Copyright (C) 1996, 1997 Free Software Foundation, Inc.
  # Wojciech Marek Ga³±zka <wgalazka@chem.uw.edu.pl>, 1997.
-+# Jakub Bogusz <qboosh@pld.org.pl>, 2002.
++# Jakub Bogusz <qboosh@pld.org.pl>, 2002-2003.
  #
  msgid ""
  msgstr ""
 -"Project-Id-Version: indent 1.9.1a\n"
-+"Project-Id-Version: indent 2.2.8a\n"
- "POT-Creation-Date: 2002-05-21 20:45+0200\n"
++"Project-Id-Version: indent 2.2.9\n"
+ "POT-Creation-Date: 2002-12-16 16:12+0000\n"
 -"PO-Revision-Date: 1997-05-03 18:31+0100\n"
-+"PO-Revision-Date: 2002-11-11 22:21+0100\n"
++"PO-Revision-Date: 2003-04-21 19:27+0200\n"
  "Last-Translator: Wojciech Marek Ga³±zka <wgalazka@chem.uw.edu.pl>\n"
- "Language-Team: Polish <pl@li.org>\n"
+-"Language-Team: Polish <pl@li.org>\n"
++"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
-@@ -14,14 +15,12 @@
+ "Content-Type: text/plain; charset=ISO-8859-2\n"
  "Content-Transfer-Encoding: 8-bit\n"
  
- #: src/args.c:518
+ #: src/args.c:543
 -#, fuzzy
  msgid "usage: indent file [-o outfile ] [ options ]\n"
 -msgstr "u¿ycie: %s plik [-o plik wynikowy ] [ opcje ]\n"
 +msgstr "sk³adnia: indent plik [-o plik-wynikowy ] [ opcje ]\n"
  
- #: src/args.c:519
+ #: src/args.c:544
 -#, fuzzy
  msgid "       indent file1 file2 ... fileN [ options ]\n"
 -msgstr "       %s plik1 plik2 ... plikN [ opcje ]\n"
 +msgstr "       indent plik1 plik2 ... plikN [ opcje ]\n"
  
- #: src/args.c:584
+ #: src/args.c:609
  #, c-format
-@@ -41,9 +40,9 @@
- #. This is not really an error, but zero exit values are
- #. returned only when code has been successfully formatted.
- #: src/args.c:716
+@@ -39,9 +38,9 @@
+ msgstr "opcja: %s\n"
+ 
+ #: src/args.c:744
 -#, fuzzy, c-format
 +#, c-format
  msgid "GNU indent %s\n"
 -msgstr "indent: %s"
 +msgstr "GNU indent %s\n"
  
- #: src/args.c:793
+ #: src/args.c:827
  #, c-format
-@@ -57,70 +56,70 @@
+@@ -55,68 +54,68 @@
  
- #: src/args.c:859
+ #: src/args.c:892
  msgid "Profile contains an unterminated comment"
 -msgstr ""
 +msgstr "Profil zawiera nie zakoñczony komentarz"
  
- #: src/args.c:896
+ #: src/args.c:929
  msgid "Profile contains unpalatable characters"
 -msgstr ""
 +msgstr "Profil zawiera nieprzyjemne znaki"
  
- #: src/backup.c:403
+ #: src/backup.c:404
  msgid "indent:  Strange version-control value\n"
 -msgstr "indent:  Dziwna warto¶æ numeru wersji\n"
 +msgstr "indent:  Dziwna warto¶æ znacznika kontroli wersji\n"
  
- #: src/backup.c:404
+ #: src/backup.c:405
  msgid "indent:  Using numbered-existing\n"
 -msgstr "indent:  U¿ywam bie¿±cy numerowany\n"
-+msgstr "indent:  U¿ycie trybu numbered-existing\n"
++msgstr "indent:  U¿ycie trybu numbered-existing (numerowane je¶li istniej±)\n"
  
- #: src/backup.c:433
+ #: src/backup.c:434
 -#, fuzzy, c-format
 +#, c-format
  msgid "indent: Can't make backup filename of %s\n"
 -msgstr "indent: Nie mogê zapisaæ kopii pliku jako %s"
 +msgstr "indent: Nie mo¿na utworzyæ nazwy kopii zapasowej pliku %s\n"
  
- #: src/backup.c:441
+ #: src/backup.c:442
 -#, fuzzy, c-format
 +#, c-format
  msgid "Can't open backup file %s"
 -msgstr "indent: Nie mogê zapisaæ kopii pliku jako %s"
 +msgstr "Nie mo¿na otworzyæ pliku kopii zapasowej %s"
  
- #: src/backup.c:448
+ #: src/backup.c:449
 -#, fuzzy, c-format
 +#, c-format
  msgid "Can't write to backup file %s"
 -msgstr "indent: Nie mogê zapisaæ kopii pliku jako %s"
 +msgstr "Nie mo¿na zapisaæ pliku kopii zapasowej %s"
  
- #: src/backup.c:462
+ #: src/backup.c:463
  #, c-format
  msgid "Can't preserve modification time on backup file %s"
 -msgstr ""
@@ -115,100 +116,98 @@
 -msgstr ""
 +msgstr "indent: B³±d systemowy: "
  
- #. Warning messages:  indent continues
  #: src/globs.h:25
  msgid "Warning"
 -msgstr ""
 +msgstr "Uwaga"
  
- #. Error messages: indent stops processing the current file.
  #: src/globs.h:29
  msgid "Error"
 -msgstr ""
 +msgstr "B³±d"
  
- #: src/indent.c:146
+ #: src/indent.c:156
  msgid "Ran out of memory"
 -msgstr ""
 +msgstr "Pamiêæ siê skoñczy³a"
  
- #: src/indent.c:521 src/indent.c:1167
+ #: src/indent.c:588 src/indent.c:1248
  #, c-format
-@@ -136,27 +135,25 @@
+@@ -132,27 +131,25 @@
  msgstr "Nadmiarowe #else"
  
- #: src/indent.c:1887
+ #: src/indent.c:1970
 -#, fuzzy
  msgid "Unmatched #elif"
 -msgstr "Nadmiarowe #endif"
 +msgstr "Niedopasowane #elif"
  
- #: src/indent.c:1914
+ #: src/indent.c:1997
  msgid "Unmatched #endif"
 -msgstr "Nadmiarowe #endif"
 +msgstr "Niedopasowane #endif"
  
- #: src/indent.c:2298
+ #: src/indent.c:2381
 -#, fuzzy
  msgid "EOF encountered in comment"
 -msgstr "Otwarty komentarz"
 +msgstr "Napotkano EOF wewn±trz komentarza"
  
- #: src/indent.c:2527
+ #: src/indent.c:2610
  msgid "Unexpected end of file"
 -msgstr ""
 +msgstr "Nieoczekiwany koniec pliku"
  
- #: src/indent.c:2533
+ #: src/indent.c:2616
 -#, fuzzy, c-format
 +#, c-format
  msgid "There were %d non-blank output lines and %d comments\n"
 -msgstr "By³o %d linii wyj¶ciowych i %d komentarzy\n"
 +msgstr "By³o %d niepustych linii wyj¶ciowych i %d komentarzy\n"
  
- #: src/indent.c:2537
+ #: src/indent.c:2620
  #, c-format
-@@ -164,32 +161,30 @@
+@@ -160,32 +157,30 @@
  msgstr "(Linii komentarza)/(Linii kodu): %6.3f\n"
  
- #: src/indent.c:2561
+ #: src/indent.c:2644
 -#, fuzzy
  msgid "Line broken 2"
 -msgstr "Przerwana linia"
 +msgstr "Przerwana linia 2"
  
- #: src/indent.c:2763
+ #: src/indent.c:2846
 -#, fuzzy, c-format
 +#, c-format
  msgid "indent: only one output file (2nd was %s)\n"
 -msgstr "%s: tylko jeden plik wyj¶ciowy (drugim by³ %s)\n"
 +msgstr "indent: tylko jeden plik wyj¶ciowy (drugim by³ %s)\n"
  
- #: src/indent.c:2772 src/indent.c:2798
+ #: src/indent.c:2855 src/indent.c:2881
 -#, fuzzy
  msgid "indent: only one input file when output file is specified\n"
 -msgstr "%s: tylko jeden plik wej¶ciowy gdy podano plik wyj¶ciowy\n"
 +msgstr "indent: tylko jeden plik wej¶ciowy gdy podano plik wyj¶ciowy\n"
  
- #: src/indent.c:2786 src/indent.c:2833
+ #: src/indent.c:2869 src/indent.c:2916
  msgid "indent: can't have filenames when specifying standard input\n"
 -msgstr "indent: nazwy plików ignorowane gdy podano standardowe wej¶cie\n"
 +msgstr "indent: nie mo¿na podaæ nazw plików gdy podano standardowe wej¶cie\n"
  
- #: src/indent.c:2806
+ #: src/indent.c:2889
  msgid "indent: only one input file when stdout is used\n"
 -msgstr "indent: tylko jeden plik wej¶ciowy gdy podano plik wyj¶ciowy\n"
 +msgstr "indent: tylko jeden plik wej¶ciowy gdy u¿ywane jest standardowe wyj¶cie\n"
  
- #: src/indent.c:3020
+ #: src/indent.c:3103
  #, c-format
  msgid "Read profile %s\n"
 -msgstr "Czytaj profil %s\n"
 +msgstr "Czytanie profilu %s\n"
  
- #: src/io.c:188
+ #: src/io.c:187
  msgid "Internal buffering error"
-@@ -198,50 +193,50 @@
+@@ -194,79 +189,78 @@
  #: src/io.c:349
  #, c-format
  msgid "Can't open input file %s"
@@ -267,56 +266,53 @@
 -msgstr ""
 +msgstr "Nie zakoñczona sta³a ³añcuchowa"
  
- #. Something like x=-1, which can mean x -= 1 ("old style" in K&R1)
- #. * or x = -1 (ANSI).  Note that this is only an ambiguity if the
-@@ -253,31 +248,30 @@
- #: src/lexi.c:990
+ #: src/lexi.c:999
  #, c-format
  msgid "old style assignment ambiguity in \"=%c\".  Assuming \"= %c\"\n"
 -msgstr ""
 -"Niejasno¶æ przy starym stylu przypisania w \"=%c\".  Przyjmujê \"= %c\"\n"
-+msgstr "Niejasno¶æ przy starym stylu przypisania w \"=%c\". Za³o¿ono \"= %c\"\n"
++msgstr "Niejasno¶æ przy starym stylu przypisania w \"=%c\".  Za³o¿ono \"= %c\"\n"
  
- #: src/output.c:1068
+ #: src/output.c:1148
  #, c-format
  msgid "indent: can't create %s\n"
 -msgstr "indent: nie mogê utworzyæ %s\n"
 +msgstr "indent: nie mo¿na utworzyæ %s\n"
  
- #: src/output.c:1107
+ #: src/output.c:1187
  #, c-format
  msgid "Can't close output file %s"
 -msgstr ""
 +msgstr "Nie mo¿na zamkn±æ pliku wyj¶ciowego %s"
  
- #: src/output.c:1120
+ #: src/output.c:1200
  #, c-format
  msgid "Can't preserve modification time on output file %s"
 -msgstr ""
 +msgstr "Nie mo¿na zachowaæ czasu modyfikacji pliku wyj¶ciowego %s"
  
- #: src/parse.c:395
+ #: src/parse.c:399
  msgid "Unmatched 'else'"
 -msgstr "Nadmiarowe 'else'"
 +msgstr "Niedopasowane 'else'"
  
- #: src/parse.c:421
+ #: src/parse.c:425
  msgid "Stmt nesting error."
 -msgstr "Zagnie¿dzony b³±d w instrukcji."
-+msgstr "B³±d Zagnie¿d¿enia instrukcji."
++msgstr "B³±d zagnie¿d¿enia instrukcji."
  
- #: src/parse.c:463
+ #: src/parse.c:467
  msgid "Unknown code to parser"
-@@ -286,7 +280,7 @@
- #: src/parse.c:473
+@@ -275,7 +269,7 @@
+ #: src/parse.c:477
  #, c-format
  msgid "ParseStack [%d]:\n"
 -msgstr ""
 +msgstr "ParseStack [%d]:\n"
  
- #: src/parse.c:477
+ #: src/parse.c:481
  #, c-format
-@@ -295,29 +289,4 @@
+@@ -284,29 +278,4 @@
  
  #: src/wildexp.c:90
  msgid "CANNOT FIND '@' FILE!"

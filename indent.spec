@@ -11,11 +11,11 @@ Summary(ru):	Программа GNU для форматирования исходных текстов на C
 Summary(tr):	GNU C girintilendirme programЩ
 Summary(uk):	Програма GNU для форматування вих╕дних текст╕в на C
 Name:		indent
-Version:	2.2.8a
-Release:	3
+Version:	2.2.9
+Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	http://home.hccnet.nl/d.ingamells/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-po-fix.patch
 Patch2:		%{name}-pl.po-update.patch
@@ -93,11 +93,10 @@ Indent - це програма GNU для "прикрашення" вих╕дних текст╕в програм на
 %patch3 -p1
 
 mv -f po/zh_TW{.Big5,}.po
-mv -f intl/libgettext.h src
 
 %build
 %{__gettextize}
-%{__aclocal}
+%{__aclocal} -I aclocal
 %{__autoconf}
 %{__automake}
 %configure
