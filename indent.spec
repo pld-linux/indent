@@ -5,11 +5,12 @@ Summary(de):	GNU C-Indenting-Programm
 Summary(fi):	GNU:n sisennysohjelma
 Summary(fr):	Programme d'indentation C de GNU
 Summary(it):	Programma della GNU per l'indentazione dei sorgenti C
+Summary(ja):	GNU C¥³¡¼¥ÉÀ°·Á¥×¥í¥°¥é¥à
 Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
 Version:	2.2.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -18,6 +19,8 @@ Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
 URL:		http://www.xs4all.nl/~carlo17/indent/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,6 +53,16 @@ source C.
 Questo e' un programma per l'indentazione della GNU. E' usato per
 abbellire i file sorgenti in C dei programmi.
 
+%description -l ja
+Indent ¤Ï C ¤Î¥³¡¼¥É¤Î²ÄÆÉÀ­¤ò¾å¤²¤ë¤¿¤á¡¢Èþ¤·¤¯À°·Á¤¹¤ë¤¿¤á¤Î
+GNU¥×¥í¥°¥é¥à¤Ç¤¹¡£ Indent ¤Ï ¤¢¤ë C ¤Îµ­½ÒÊýË¡¤«¤éÊÌ¤Îµ­½ÒÊýË¡¤Ø¤È
+ÊÑ´¹¤¹¤ë¤³¤È¤¬¤Ç¤­¤Þ¤¹¡£ Indent ¤Ï¡¢Àµ¤·¤¤ C ¤Î¹½Ê¸¤òÍý²ò¤·¤Þ¤¹¡£
+¤½¤·¤Æ¡¢´Ö°ã¤Ã¤¿¹½Ê¸¤â½èÍý¤·¤è¤¦¤È¤·¤Þ¤¹¡£
+
+¤¢¤Ê¤¿¤¬ C
+¤Ç¥×¥í¥°¥é¥ß¥ó¥°¤·¡¢¤Þ¤¿¼«Æ°¤Ç¥³¡¼¥É¤ÎÀ°·Á¤ò¤·¤¿¤¤¤Î¤Ç¤¢¤ì¤Ð
+indent¥Ñ¥Ã¥±¡¼¥¸¤ò¥¤¥ó¥¹¥È¡¼¥ë¤·¤Æ¤¯¤À¤µ¤¤¡£
+
 %description -l pl
 GNU program formatuj±cy ¼ród³a w C, które po takiej czynno¶ci ³atwiej
 siê czyta. Indent umo¿liwia tak¿e konwersjê miêdzy ró¿nymi stylami
@@ -66,6 +79,9 @@ kullanýlýr.
 %patch0 -p1
 
 %build
+aclocal
+autoconf
+automake -a -c
 %configure
 %{__make}
 
