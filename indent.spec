@@ -65,10 +65,3 @@ fi
 %attr(755,root,root) %{_bindir}/*
 %{_infodir}/*info*
 %{_mandir}/man1/*
-
-%changelog
-* Wed Jun 30 1999 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [1.10-2]
-- based on RH spec,
-- spec rewrited by PLD team,
-- pl translation  Marcin 'Qrczak' Kowalczyk <qrczak@knm.org.pl>.
