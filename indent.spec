@@ -62,8 +62,8 @@ if [ "$1" = 0 ]; then
 fi
 
 %files
-%defattr(644, root, root, 755)
-%attr(755, root, root) %{_bindir}/*
+%defattr(644,root,root,755)
+%attr(755,root,root) %{_bindir}/*
 %{_infodir}/*info*
 %{_mandir}/man1/*
 
