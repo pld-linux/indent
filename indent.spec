@@ -15,6 +15,7 @@ License:	GPL
 Group:		Development/Tools
 Source0:	ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
+Patch1:		%{name}-am_fix.patch
 URL:		http://www.xs4all.nl/~carlo17/indent/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -74,6 +75,7 @@ kullanýlýr.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing
