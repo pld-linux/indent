@@ -1,0 +1,32 @@
+--- indent-2.2.9/src/Makefile.am~	Thu May 29 00:16:52 2003
++++ indent-2.2.9/src/Makefile.am	Thu May 29 00:16:52 2003
+@@ -13,7 +13,7 @@
+ BUILT_SOURCES = gperf.c gperf-cc.c
+ INCLUDES = -I. -I$(srcdir) -I$(top_srcdir)/intl
+ DEFS = @DEFS@ -DLOCALEDIR=\"${localedir}\"
+-LIBS = @LIBINTL@ @LIBS@
++LIBS = @INTLLIBS@ @LIBS@
+ 
+ 
+ MAINTAINERCLEANFILES= Makefile.in
+--- indent-2.2.9/src/Makefile.in~	Thu May 29 00:16:51 2003
++++ indent-2.2.9/src/Makefile.in	Thu May 29 00:16:51 2003
+@@ -118,7 +118,7 @@
+ BUILT_SOURCES = gperf.c gperf-cc.c
+ INCLUDES = -I. -I$(srcdir) -I$(top_srcdir)/intl
+ DEFS = @DEFS@ -DLOCALEDIR=\"${localedir}\"
+-LIBS = @LIBINTL@ @LIBS@
++LIBS = @INTLLIBS@ @LIBS@
+ 
+ MAINTAINERCLEANFILES = Makefile.in
+ subdir = src
+--- indent-2.2.9/configure.ac~	Thu May 29 00:21:34 2003
++++ indent-2.2.9/configure.ac	Thu May 29 00:22:09 2003
+@@ -34,6 +34,7 @@
+ 
+ dnl These are the only lines required to internationalize the package.
+ dnl (OK, not quite, the AC_OUTPUT has also some parts.)
++ALL_LINGUAS=`cat po/LINGUAS`
+ AM_GNU_GETTEXT
+ 
+ AH_TEMPLATE(HAVE_LC_MESSAGES)
