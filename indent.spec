@@ -4,14 +4,13 @@ Summary(fr):	Programme d'indentation C de GNU
 Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
-Version:	1.10.0
-Release:	2
+Version:	2.1.1
+Release:	1
 Copyright:	GPL
 Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
 Source:		ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		indent-info.patch
-patch1:		indent-glibc21.patch
 Prereq:		/sbin/install-info
 BuildRoot:	/tmp/%{name}-%{version}-root
 
@@ -36,7 +35,6 @@ Bu paket bir C programýnýn kaynak kodunu güzelleþtirmek için kullanýlýr.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 LDFLAGS="-s"; export LDFLAGS
