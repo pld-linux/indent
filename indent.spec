@@ -12,15 +12,15 @@ Summary(tr):	GNU C girintilendirme programЩ
 Summary(uk):	Програма GNU для форматування вих╕дних текст╕в на C
 Name:		indent
 Version:	2.2.8a
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Tools
 Source0:	http://home.hccnet.nl/d.ingamells/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
-Patch1:		%{name}-am_fix.patch
+Patch1:		%{name}-po-fix.patch
+Patch2:		%{name}-pl.po-update.patch
 URL:		http://home.hccnet.nl/d.ingamells/beautify.html
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -86,12 +86,9 @@ Indent - це програма GNU для "прикрашення" вих╕дних текст╕в програм на
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
-rm -f missing
-%{__aclocal} -I aclocal
-%{__autoconf}
-%{__automake}
 %configure
 %{__make}
 
@@ -114,5 +111,5 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_infodir}/*info*
+%{_infodir}/*.info*
 %{_mandir}/man1/*
