@@ -9,7 +9,7 @@ Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
 Version:	2.2.5
-Release:	2
+Release:	5
 License:	GPL
 Group:		Development/Tools
 Group(fr):	Development/Outils
