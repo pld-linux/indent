@@ -10,7 +10,7 @@ Copyright:   GPL
 Group:       Development/Tools
 Source:      ftp://prep.ai.mit.edu/pub/gnu/%{name}-%{version}.tar.gz
 Prereq:      /sbin/install-info
-BuildRoot:   /tmp/%{name}-%{root}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 This is the GNU indenting program.  It is used to beautify
