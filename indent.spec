@@ -8,7 +8,7 @@ Summary(it):	Programma della GNU per l'indentazione dei sorgenti C
 Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
-Version:	2.2.1
+Version:	2.2.2
 Release:	1
 Copyright:	GPL
 Group:		Development/Tools
