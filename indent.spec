@@ -7,16 +7,18 @@ Summary(fr):	Programme d'indentation C de GNU
 Summary(it):	Programma della GNU per l'indentazione dei sorgenti C
 Summary(ja):	GNU C╔Ё║╪╔ию╟╥а╔в╔М╔╟╔И╔Ю
 Summary(pl):	GNU program formatuj╠cy ╪rСdЁa w C
+Summary(ru):	Программа GNU для форматирования исходных текстов на C
 Summary(tr):	GNU C girintilendirme programЩ
+Summary(uk):	Програма GNU для форматування вих╕дних текст╕в на C
 Name:		indent
-Version:	2.2.8
+Version:	2.2.8a
 Release:	1
 License:	GPL
 Group:		Development/Tools
-Source0:	ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
+Source0:	http://home.hccnet.nl/d.ingamells/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-am_fix.patch
-URL:		http://www.xs4all.nl/~carlo17/indent/
+URL:		http://home.hccnet.nl/d.ingamells/beautify.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -57,10 +59,6 @@ GNU╔в╔М╔╟╔И╔Ю╓г╓╧║ё Indent ╓о ╓╒╓К C ╓н╣╜╫рйЩк║╓╚╓Ийл╓н╣╜╫рйЩк║╓ь╓х
 йя╢╧╓╧╓К╓Ё╓х╓╛╓г╓╜╓ч╓╧║ё Indent ╓о║╒ю╣╓╥╓╓ C ╓н╧╫й╦╓РмЩ╡Р╓╥╓ч╓╧║ё
 ╓╫╓╥╓ф║╒╢ж╟Ц╓ц╓©╧╫й╦╓Б╫ХмЩ╓╥╓Х╓╕╓х╓╥╓ч╓╧║ё
 
-╓╒╓й╓©╓╛ C
-╓г╔в╔М╔╟╔И╔ъ╔С╔╟╓╥║╒╓ч╓©╪╚ф╟╓г╔Ё║╪╔и╓ню╟╥а╓Р╓╥╓©╓╓╓н╓г╓╒╓Л╓п
-indent╔я╔ц╔╠║╪╔╦╓Р╔╓╔С╔╧╔х║╪╔К╓╥╓ф╓╞╓ю╓╣╓╓║ё
-
 %description -l pl
 GNU program formatuj╠cy ╪rСdЁa w C, ktСre po takiej czynno╤ci Ёatwiej
 siЙ czyta. Indent umo©liwia tak©e konwersjЙ miЙdzy rС©nymi stylami
@@ -68,9 +66,21 @@ zapisu kodu ╪rСdЁowego w C. Program ten rozumie poprawna skЁadniЙ kodu
 ╪rСdЁowego C i stara siЙ tak©e formatowaФ tak©e kod ktСry jest
 niepoprawny skЁadniowo.
 
+%description -l ru
+Indent - это программа GNU для придания красивости исходным текстам
+программ на языке C, делая их более читабельными. Indent может также
+конвертировать тексты между разными стилями написания. Он понимает
+корректный C синтаксис и старается обрабатывать некорректный.
+
 %description -l tr
 Bu paket bir C programЩnЩn kaynak kodunu gЭzelleЧtirmek iГin
 kullanЩlЩr.
+
+%description -l uk
+Indent - це програма GNU для "прикрашення" вих╕дних текст╕в програм на
+мов╕ C з метою зробити ╖х б╕льш читабельними. Indent може також
+конвертувати тексти м╕ж р╕зними стилями написання. В╕н розум╕╓
+коректний C синтаксис ╕ намага╓ться обробляти некоректний.
 
 %prep
 %setup -q
