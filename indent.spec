@@ -10,7 +10,7 @@ Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
 Version:	2.2.6
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Tools
 Group(de):	Entwicklung/Werkzeuge
@@ -18,6 +18,7 @@ Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
 Source0:	ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		%{name}-info.patch
+Patch1:		%{name}-am_fixes.patch
 URL:		http://www.xs4all.nl/~carlo17/indent/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -77,9 +78,11 @@ kullanýlýr.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
-aclocal
+rm -f missing
+aclocal -I aclocal
 autoconf
 automake -a -c
 %configure
