@@ -43,8 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/{bin,info,man/man1}
 
 make prefix=$RPM_BUILD_ROOT/usr install
-gzip -9nf $RPM_BUILD_ROOT/usr/info/*
-install indent.1 $RPM_BUILD_ROOT/usr/man/man1
+gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*
+install indent.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 strip $RPM_BUILD_ROOT/usr/bin/indent
 
@@ -52,20 +52,20 @@ strip $RPM_BUILD_ROOT/usr/bin/indent
 rm -rf $RPM_BUILD_ROOT
 
 %post
-/sbin/install-info /usr/info/indent.info.gz /usr/info/dir \
+/sbin/install-info %{_infodir}/indent.info.gz /usr/info/dir \
 	--entry="* indent: (indent).            Program to format source code."
 
 %preun
 if [ "$1" = 0 ]; then
-	/sbin/install-info --delete /usr/info/indent.info.gz /usr/info/dir \
+	/sbin/install-info --delete %{_infodir}/indent.info.gz /usr/info/dir \
 		--entry="* indent: (indent).            Program to format source code."
 fi
 
 %files
 %defattr(644, root, root, 755)
 %attr(755, root, root) /usr/bin/*
-/usr/info/*info*
-%attr(644, root,  man) /usr/man/man1/*
+%{_infodir}/*info*
+%attr(644, root,  man) %{_mandir}/man1/*
 
 %changelog
 * Sat Sep 26 1998 Marcin 'Qrczak' Kowalczyk <qrczak@knm.org.pl>
