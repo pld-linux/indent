@@ -8,7 +8,7 @@ diff -Nru indent-1.10.0/indent.texinfo indent-1.10.0.new/indent.texinfo
 +@format
 +@dircategory File utilities:
 +@direntry
-+* indent: (indent)			Program to format source code
++* indent: (indent).			Program to format source code
 +@end direntry
 +@end format
 +
