@@ -22,7 +22,7 @@ Patch1:		%{name}-po-fix.patch
 Patch2:		%{name}-pl.po-update.patch
 Patch3:		%{name}-zh_TW.patch
 Patch4:		%{name}-make-jN.patch
-Patch5		%{name}-old_gettext.patch
+Patch5:		%{name}-old_gettext.patch
 URL:		http://home.hccnet.nl/d.ingamells/beautify.html
 BuildRequires:	autoconf
 BuildRequires:	automake
