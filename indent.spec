@@ -14,47 +14,51 @@ License:	GPL
 Group:		Development/Tools
 Group(fr):	Development/Outils
 Group(pl):	Programowanie/Narzêdzia
-Source:		ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
+Source0:	ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		indent-info.patch
 URL:		http://www.xs4all.nl/~carlo17/indent/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Indent is a GNU program for beautifying C code, so that it is easier to
-read. Indent can also convert from one C writing style to a different one.
-Indent understands correct C syntax and tries to handle incorrect C syntax.
+Indent is a GNU program for beautifying C code, so that it is easier
+to read. Indent can also convert from one C writing style to a
+different one. Indent understands correct C syntax and tries to handle
+incorrect C syntax.
 
 %description -l cs
-Toto je odsazovací program GNU. Pou¾ívá se ke zkrá¹lení zdrojových souborù
-v programech C.
+Toto je odsazovací program GNU. Pou¾ívá se ke zkrá¹lení zdrojových
+souborù v programech C.
 
 %description -l da
-GNU indenterings-program. Det bruges til at få C kildetekster til at se
-pænere (og mere læsbare) ud
+GNU indenterings-program. Det bruges til at få C kildetekster til at
+se pænere (og mere læsbare) ud
 
 %description -l de
 Das GNU-Indenting-Programm. Zur Verschönerung Ihrer
 C-Programmquelldateienattraktiver aussehen!
 
 %description -l fi
-Tämä on GNU:n sisennysohjelma. Sitä käytetään C-ohjelmakoodin muotoiluun.
+Tämä on GNU:n sisennysohjelma. Sitä käytetään C-ohjelmakoodin
+muotoiluun.
 
 %description -l fr
-Programme d'indentation de GNU. Utilisé pour embellir les fichiers source
-C.
+Programme d'indentation de GNU. Utilisé pour embellir les fichiers
+source C.
 
 %description -l it
-Questo e' un programma per l'indentazione della GNU. E' usato per abbellire
-i file sorgenti in C dei programmi.
+Questo e' un programma per l'indentazione della GNU. E' usato per
+abbellire i file sorgenti in C dei programmi.
 
 %description -l pl
-GNU program formatuj±cy ¼ród³a w C, które po takiej czynno¶ci ³atwiej siê
-czyta. Indent umo¿liwia tak¿e konwersjê miêdzy ró¿nymi stylami zapisu kodu
-¼ród³owego w C. Program ten rozumie poprawna sk³adniê kodu ¼ród³owego C i
-stara siê tak¿e formatowaæ tak¿e kod który jest niepoprawny sk³adniowo.
+GNU program formatuj±cy ¼ród³a w C, które po takiej czynno¶ci ³atwiej
+siê czyta. Indent umo¿liwia tak¿e konwersjê miêdzy ró¿nymi stylami
+zapisu kodu ¼ród³owego w C. Program ten rozumie poprawna sk³adniê kodu
+¼ród³owego C i stara siê tak¿e formatowaæ tak¿e kod który jest
+niepoprawny sk³adniowo.
 
 %description -l tr
-Bu paket bir C programýnýn kaynak kodunu güzelleþtirmek için kullanýlýr.
+Bu paket bir C programýnýn kaynak kodunu güzelleþtirmek için
+kullanýlýr.
 
 %prep
 %setup -q
