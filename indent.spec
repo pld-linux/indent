@@ -9,8 +9,8 @@ Summary(pl):	GNU program formatuj±cy ¼ród³a w C
 Summary(tr):	GNU C girintilendirme programý
 Name:		indent
 Version:	2.2.4
-Release:	1
-Copyright:	GPL
+Release:	2
+License:	GPL
 Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
 Source:		ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
@@ -21,12 +21,12 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 Indent is a GNU program for beautifying C code, so that it is easier to
-read. Indent can also convert from one C writing style to a different one. 
+read. Indent can also convert from one C writing style to a different one.
 Indent understands correct C syntax and tries to handle incorrect C syntax.
 
 %description -l cs
-Toto je odsazovací program GNU. Pou¾ívá se ke zkrá¹lení zdrojových souborù v
-programech C.
+Toto je odsazovací program GNU. Pou¾ívá se ke zkrá¹lení zdrojových souborù
+v programech C.
 
 %description -l da
 GNU indenterings-program. Det bruges til at få C kildetekster til at se
@@ -40,7 +40,8 @@ C-Programmquelldateienattraktiver aussehen!
 Tämä on GNU:n sisennysohjelma. Sitä käytetään C-ohjelmakoodin muotoiluun.
 
 %description -l fr
-Programme d'indentation de GNU. Utilisé pour embellir les fichiers source C.
+Programme d'indentation de GNU. Utilisé pour embellir les fichiers source
+C.
 
 %description -l it
 Questo e' un programma per l'indentazione della GNU. E' usato per abbellire
