@@ -15,7 +15,7 @@ Group:		Development/Tools
 Group(pl):	Programowanie/Narzêdzia
 Source:		ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		indent-info.patch
-Prereq:		/sbin/install-info
+Prereq:		/usr/sbin/fix-info-dir
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
