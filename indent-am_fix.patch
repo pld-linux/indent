@@ -5,7 +5,7 @@
  bin_PROGRAMS = texinfo2man
  texinfo2man_SOURCES = texinfo2man.c
 -man_MANS = @PACKAGE@.1
-+man_MANS = ${PACKAGE).1
++man_MANS = $(PACKAGE).1
  
 -EXTRA_DIST = $(man_MANS) @PACKAGE@.1.in
 +EXTRA_DIST = $(man_MANS) $(PACKAGE).1.in
