@@ -18,7 +18,7 @@ Source:		ftp://prep.ai.mit.edu/pub/gnu/indent/%{name}-%{version}.tar.gz
 Patch0:		indent-info.patch
 URL:		http://www.xs4all.nl/~carlo17/indent/
 Prereq:		/usr/sbin/fix-info-dir
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Indent is a GNU program for beautifying C code, so that it is easier to
