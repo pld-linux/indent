@@ -46,7 +46,7 @@ make prefix=$RPM_BUILD_ROOT/usr install
 gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*
 install indent.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-strip $RPM_BUILD_ROOT/usr/bin/indent
+strip $RPM_BUILD_ROOT%{_bindir}/indent
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -63,7 +63,7 @@ fi
 
 %files
 %defattr(644, root, root, 755)
-%attr(755, root, root) /usr/bin/*
+%attr(755, root, root) %{_bindir}/*
 %{_infodir}/*info*
 %{_mandir}/man1/*
 
