@@ -35,7 +35,7 @@ Bu paket bir C programýnýn kaynak kodunu güzelleþtirmek için kullanýlýr.
 %setup -q
 
 %build
-./configure --prefix=/usr
+%configure
 make CFLAGS="$RPM_OPT_FLAGS" LDFLAGS=-s
 
 %install
