@@ -65,7 +65,7 @@ fi
 %defattr(644, root, root, 755)
 %attr(755, root, root) /usr/bin/*
 %{_infodir}/*info*
-%attr(644, root,  man) %{_mandir}/man1/*
+%{_mandir}/man1/*
 
 %changelog
 * Sat Sep 26 1998 Marcin 'Qrczak' Kowalczyk <qrczak@knm.org.pl>
