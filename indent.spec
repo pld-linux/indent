@@ -79,7 +79,7 @@ kullanýlýr.
 
 %build
 rm -f missing
-aclocal -I aclocal
+%{__aclocal} -I aclocal
 %{__autoconf}
 %{__automake}
 %configure
