@@ -23,6 +23,7 @@ Patch2:		%{name}-pl.po-update.patch
 Patch3:		%{name}-zh_TW.patch
 Patch4:		%{name}-make-jN.patch
 Patch5:		%{name}-overflow.patch
+Patch6:		%{name}-gcc4.patch
 URL:		http://mysite.freeserve.com/indent/beautify.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -98,6 +99,7 @@ Indent - це програма GNU для "прикрашення" вих╕дних текст╕в програм на
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 mv -f po/zh_TW{.Big5,}.po
 
