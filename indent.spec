@@ -1,15 +1,15 @@
 Summary:	GNU C indenting program
-Summary(cs):	OdsazovacМ program GNU C
-Summary(da):	GNU C indenterings-program
-Summary(de):	GNU C-Indenting-Programm
-Summary(fi):	GNU:n sisennysohjelma
-Summary(fr):	Programme d'indentation C de GNU
-Summary(it):	Programma della GNU per l'indentazione dei sorgenti C
-Summary(ja):	GNU C╔Ё║╪╔ию╟╥а╔в╔М╔╟╔И╔Ю
-Summary(pl):	GNU program formatuj╠cy ╪rСdЁa w C
-Summary(ru):	Программа GNU для форматирования исходных текстов на C
-Summary(tr):	GNU C girintilendirme programЩ
-Summary(uk):	Програма GNU для форматування вих╕дних текст╕в на C
+Summary(cs.UTF-8):   Odsazovacц╜ program GNU C
+Summary(da.UTF-8):   GNU C indenterings-program
+Summary(de.UTF-8):   GNU C-Indenting-Programm
+Summary(fi.UTF-8):   GNU:n sisennysohjelma
+Summary(fr.UTF-8):   Programme d'indentation C de GNU
+Summary(it.UTF-8):   Programma della GNU per l'indentazione dei sorgenti C
+Summary(ja.UTF-8):   GNU CЦ┌ЁЦ┐╪Ц┐┴Ф∙╢Е╫╒Ц┐≈Ц┐╜Ц┌╟Ц┐╘Ц┐═
+Summary(pl.UTF-8):   GNU program formatujд┘cy е╨rцЁdе┌a w C
+Summary(ru.UTF-8):   п÷я─п╬пЁя─п╟п╪п╪п╟ GNU п╢п╩я▐ я└п╬я─п╪п╟я┌п╦я─п╬п╡п╟п╫п╦я▐ п╦я│я┘п╬п╢п╫я▀я┘ я┌п╣п╨я│я┌п╬п╡ п╫п╟ C
+Summary(tr.UTF-8):   GNU C girintilendirme programд╠
+Summary(uk.UTF-8):   п÷я─п╬пЁя─п╟п╪п╟ GNU п╢п╩я▐ я└п╬я─п╪п╟я┌я┐п╡п╟п╫п╫я▐ п╡п╦я┘я√п╢п╫п╦я┘ я┌п╣п╨я│я┌я√п╡ п╫п╟ C
 Name:		indent
 Version:	2.2.9
 Release:	7
@@ -38,58 +38,58 @@ to read. Indent can also convert from one C writing style to a
 different one. Indent understands correct C syntax and tries to handle
 incorrect C syntax.
 
-%description -l cs
-Toto je odsazovacМ program GNU. Pou╬МvА se ke zkrА╧lenМ zdrojovЩch
-souborЫ v programech C.
+%description -l cs.UTF-8
+Toto je odsazovacц╜ program GNU. Pouе╬ц╜vц║ se ke zkrц║е║lenц╜ zdrojovц╫ch
+souborе╞ v programech C.
 
-%description -l da
-GNU indenterings-program. Det bruges til at fЕ C kildetekster til at
-se pФnere (og mere lФsbare) ud
+%description -l da.UTF-8
+GNU indenterings-program. Det bruges til at fц╔ C kildetekster til at
+se pц╕nere (og mere lц╕sbare) ud
 
-%description -l de
-Das GNU-Indenting-Programm. Zur VerschЖnerung Ihrer
+%description -l de.UTF-8
+Das GNU-Indenting-Programm. Zur Verschц╤nerung Ihrer
 C-Programmquelldateienattraktiver aussehen!
 
-%description -l fi
-TДmД on GNU:n sisennysohjelma. SitД kДytetДДn C-ohjelmakoodin
+%description -l fi.UTF-8
+Tц╓mц╓ on GNU:n sisennysohjelma. Sitц╓ kц╓ytetц╓ц╓n C-ohjelmakoodin
 muotoiluun.
 
-%description -l fr
-Programme d'indentation de GNU. UtilisИ pour embellir les fichiers
+%description -l fr.UTF-8
+Programme d'indentation de GNU. Utilisц╘ pour embellir les fichiers
 source C.
 
-%description -l it
+%description -l it.UTF-8
 Questo e' un programma per l'indentazione della GNU. E' usato per
 abbellire i file sorgenti in C dei programmi.
 
-%description -l ja
-Indent ╓о C ╓н╔Ё║╪╔и╓н╡дфию╜╓Р╬Е╓╡╓К╓©╓А║╒хЧ╓╥╓╞ю╟╥а╓╧╓К╓©╓А╓н
-GNU╔в╔М╔╟╔И╔Ю╓г╓╧║ё Indent ╓о ╓╒╓К C ╓н╣╜╫рйЩк║╓╚╓Ийл╓н╣╜╫рйЩк║╓ь╓х
-йя╢╧╓╧╓К╓Ё╓х╓╛╓г╓╜╓ч╓╧║ё Indent ╓о║╒ю╣╓╥╓╓ C ╓н╧╫й╦╓РмЩ╡Р╓╥╓ч╓╧║ё
-╓╫╓╥╓ф║╒╢ж╟Ц╓ц╓©╧╫й╦╓Б╫ХмЩ╓╥╓Х╓╕╓х╓╥╓ч╓╧║ё
+%description -l ja.UTF-8
+Indent Ц│╞ C Ц│╝Ц┌ЁЦ┐╪Ц┐┴Ц│╝Е▐╞Х╙╜Ф─╖Ц┌▓Д╦┼Ц│▓Ц┌▀Ц│÷Ц┌│Ц─│Г╬▌Ц│≈Ц│▐Ф∙╢Е╫╒Ц│≥Ц┌▀Ц│÷Ц┌│Ц│╝
+GNUЦ┐≈Ц┐╜Ц┌╟Ц┐╘Ц┐═Ц│╖Ц│≥Ц─┌ Indent Ц│╞ Ц│┌Ц┌▀ C Ц│╝Х╗≤Х©╟Ф√╧ФЁ∙Ц│▀Ц┌┴Е┬╔Ц│╝Х╗≤Х©╟Ф√╧ФЁ∙Ц│╦Ц│╗
+Е╓┴Ф▐⌡Ц│≥Ц┌▀Ц│⌠Ц│╗Ц│▄Ц│╖Ц│█Ц│╬Ц│≥Ц─┌ Indent Ц│╞Ц─│Ф╜ёЦ│≈Ц│└ C Ц│╝Ф╖▀Ф√┤Ц┌▓Г░├Х╖ёЦ│≈Ц│╬Ц│≥Ц─┌
+Ц│²Ц│≈Ц│╕Ц─│И√⌠И│∙Ц│ёЦ│÷Ф╖▀Ф√┤Ц┌┌Е┤╕Г░├Ц│≈Ц┌┬Ц│├Ц│╗Ц│≈Ц│╬Ц│≥Ц─┌
 
-%description -l pl
-GNU program formatuj╠cy ╪rСdЁa w C, ktСre po takiej czynno╤ci Ёatwiej
-siЙ czyta. Indent umo©liwia tak©e konwersjЙ miЙdzy rС©nymi stylami
-zapisu kodu ╪rСdЁowego w C. Program ten rozumie poprawna skЁadniЙ kodu
-╪rСdЁowego C i stara siЙ tak©e formatowaФ tak©e kod ktСry jest
-niepoprawny skЁadniowo.
+%description -l pl.UTF-8
+GNU program formatujд┘cy е╨rцЁdе┌a w C, ktцЁre po takiej czynnoе⌡ci е┌atwiej
+siд≥ czyta. Indent umoе╪liwia takе╪e konwersjд≥ miд≥dzy rцЁе╪nymi stylami
+zapisu kodu е╨rцЁdе┌owego w C. Program ten rozumie poprawna skе┌adniд≥ kodu
+е╨rцЁdе┌owego C i stara siд≥ takе╪e formatowaд┤ takе╪e kod ktцЁry jest
+niepoprawny skе┌adniowo.
 
-%description -l ru
-Indent - это программа GNU для придания красивости исходным текстам
-программ на языке C, делая их более читабельными. Indent может также
-конвертировать тексты между разными стилями написания. Он понимает
-корректный C синтаксис и старается обрабатывать некорректный.
+%description -l ru.UTF-8
+Indent - я█я┌п╬ п©я─п╬пЁя─п╟п╪п╪п╟ GNU п╢п╩я▐ п©я─п╦п╢п╟п╫п╦я▐ п╨я─п╟я│п╦п╡п╬я│я┌п╦ п╦я│я┘п╬п╢п╫я▀п╪ я┌п╣п╨я│я┌п╟п╪
+п©я─п╬пЁя─п╟п╪п╪ п╫п╟ я▐п╥я▀п╨п╣ C, п╢п╣п╩п╟я▐ п╦я┘ п╠п╬п╩п╣п╣ я┤п╦я┌п╟п╠п╣п╩я▄п╫я▀п╪п╦. Indent п╪п╬п╤п╣я┌ я┌п╟п╨п╤п╣
+п╨п╬п╫п╡п╣я─я┌п╦я─п╬п╡п╟я┌я▄ я┌п╣п╨я│я┌я▀ п╪п╣п╤п╢я┐ я─п╟п╥п╫я▀п╪п╦ я│я┌п╦п╩я▐п╪п╦ п╫п╟п©п╦я│п╟п╫п╦я▐. п·п╫ п©п╬п╫п╦п╪п╟п╣я┌
+п╨п╬я─я─п╣п╨я┌п╫я▀п╧ C я│п╦п╫я┌п╟п╨я│п╦я│ п╦ я│я┌п╟я─п╟п╣я┌я│я▐ п╬п╠я─п╟п╠п╟я┌я▀п╡п╟я┌я▄ п╫п╣п╨п╬я─я─п╣п╨я┌п╫я▀п╧.
 
-%description -l tr
-Bu paket bir C programЩnЩn kaynak kodunu gЭzelleЧtirmek iГin
-kullanЩlЩr.
+%description -l tr.UTF-8
+Bu paket bir C programд╠nд╠n kaynak kodunu gц╪zelleе÷tirmek iц╖in
+kullanд╠lд╠r.
 
-%description -l uk
-Indent - це програма GNU для "прикрашення" вих╕дних текст╕в програм на
-мов╕ C з метою зробити ╖х б╕льш читабельними. Indent може також
-конвертувати тексти м╕ж р╕зними стилями написання. В╕н розум╕╓
-коректний C синтаксис ╕ намага╓ться обробляти некоректний.
+%description -l uk.UTF-8
+Indent - я├п╣ п©я─п╬пЁя─п╟п╪п╟ GNU п╢п╩я▐ "п©я─п╦п╨я─п╟я┬п╣п╫п╫я▐" п╡п╦я┘я√п╢п╫п╦я┘ я┌п╣п╨я│я┌я√п╡ п©я─п╬пЁя─п╟п╪ п╫п╟
+п╪п╬п╡я√ C п╥ п╪п╣я┌п╬я▌ п╥я─п╬п╠п╦я┌п╦ я≈я┘ п╠я√п╩я▄я┬ я┤п╦я┌п╟п╠п╣п╩я▄п╫п╦п╪п╦. Indent п╪п╬п╤п╣ я┌п╟п╨п╬п╤
+п╨п╬п╫п╡п╣я─я┌я┐п╡п╟я┌п╦ я┌п╣п╨я│я┌п╦ п╪я√п╤ я─я√п╥п╫п╦п╪п╦ я│я┌п╦п╩я▐п╪п╦ п╫п╟п©п╦я│п╟п╫п╫я▐. п▓я√п╫ я─п╬п╥я┐п╪я√я■
+п╨п╬я─п╣п╨я┌п╫п╦п╧ C я│п╦п╫я┌п╟п╨я│п╦я│ я√ п╫п╟п╪п╟пЁп╟я■я┌я▄я│я▐ п╬п╠я─п╬п╠п╩я▐я┌п╦ п╫п╣п╨п╬я─п╣п╨я┌п╫п╦п╧.
 
 %prep
 %setup -q
