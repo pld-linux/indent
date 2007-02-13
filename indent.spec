@@ -1,15 +1,15 @@
 Summary:	GNU C indenting program
-Summary(cs.UTF-8):   Odsazovací program GNU C
-Summary(da.UTF-8):   GNU C indenterings-program
-Summary(de.UTF-8):   GNU C-Indenting-Programm
-Summary(fi.UTF-8):   GNU:n sisennysohjelma
-Summary(fr.UTF-8):   Programme d'indentation C de GNU
-Summary(it.UTF-8):   Programma della GNU per l'indentazione dei sorgenti C
-Summary(ja.UTF-8):   GNU Cコード整形プログラム
-Summary(pl.UTF-8):   GNU program formatujący źródła w C
-Summary(ru.UTF-8):   Программа GNU для форматирования исходных текстов на C
-Summary(tr.UTF-8):   GNU C girintilendirme programı
-Summary(uk.UTF-8):   Програма GNU для форматування вихідних текстів на C
+Summary(cs.UTF-8):	Odsazovací program GNU C
+Summary(da.UTF-8):	GNU C indenterings-program
+Summary(de.UTF-8):	GNU C-Indenting-Programm
+Summary(fi.UTF-8):	GNU:n sisennysohjelma
+Summary(fr.UTF-8):	Programme d'indentation C de GNU
+Summary(it.UTF-8):	Programma della GNU per l'indentazione dei sorgenti C
+Summary(ja.UTF-8):	GNU Cコード整形プログラム
+Summary(pl.UTF-8):	GNU program formatujący źródła w C
+Summary(ru.UTF-8):	Программа GNU для форматирования исходных текстов на C
+Summary(tr.UTF-8):	GNU C girintilendirme programı
+Summary(uk.UTF-8):	Програма GNU для форматування вихідних текстів на C
 Name:		indent
 Version:	2.2.9
 Release:	7
