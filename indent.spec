@@ -12,7 +12,7 @@ Summary(tr.UTF-8):	GNU C girintilendirme programı
 Summary(uk.UTF-8):	Програма GNU для форматування вихідних текстів на C
 Name:		indent
 Version:	2.2.9
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Tools
 Source0:	ftp://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
