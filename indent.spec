@@ -15,7 +15,7 @@ Version:	2.2.9
 Release:	9
 License:	GPL
 Group:		Development/Tools
-Source0:	ftp://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
+Source0:	http://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
 # Source0-md5:	dcdbb163bef928306dee2a0cfc581c89
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-po-fix.patch
