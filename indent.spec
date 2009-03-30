@@ -12,7 +12,7 @@ Summary(tr.UTF-8):	GNU C girintilendirme programı
 Summary(uk.UTF-8):	Програма GNU для форматування вихідних текстів на C
 Name:		indent
 Version:	2.2.9
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Tools
 Source0:	http://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
@@ -28,7 +28,7 @@ URL:		http://mysite.freeserve.com/indent/beautify.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	tetex
+BuildRequires:	texlive
 BuildRequires:	texi2html
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
