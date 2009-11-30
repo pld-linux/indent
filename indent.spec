@@ -28,9 +28,10 @@ URL:		http://mysite.freeserve.com/indent/beautify.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	texlive
+BuildRequires:	perl-Encode
 BuildRequires:	texi2html
 BuildRequires:	texinfo
+BuildRequires:	texlive
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
