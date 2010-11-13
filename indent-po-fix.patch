@@ -9,13 +9,13 @@
  "Content-Transfer-Encoding: 8bit\n"
  
  #: src/args.c:518
---- indent-2.2.8a/src/indent.c.orig	Tue Apr 23 22:49:24 2002
-+++ indent-2.2.8a/src/indent.c	Mon Nov 11 23:22:38 2002
-@@ -2980,6 +2980,7 @@
+--- indent-2.2.10/src/indent.c.orig	2008-03-11 19:50:42.000000000 +0100
++++ indent-2.2.10/src/indent.c	2010-11-13 07:52:15.271104966 +0100
+@@ -3290,6 +3290,7 @@
      exit_values_ty exit_status;
  
- #if defined (HAVE_SETLOCALE) && defined (HAVE_LC_MESSAGES)
-+    setlocale (LC_CTYPE, "");
-     setlocale (LC_MESSAGES, "");
+ #if defined (HAVE_SETLOCALE) && defined (HAVE_LC_MESSAGES) && defined (HAVE_LCCTYPES)
++    setlocale(LC_CTYPE, "");
+     setlocale(LC_MESSAGES, "");
  #endif
-     bindtextdomain (PACKAGE, LOCALEDIR);
+     bindtextdomain(PACKAGE, LOCALEDIR);

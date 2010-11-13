@@ -11,23 +11,21 @@ Summary(ru.UTF-8):	Программа GNU для форматирования и
 Summary(tr.UTF-8):	GNU C girintilendirme programı
 Summary(uk.UTF-8):	Програма GNU для форматування вихідних текстів на C
 Name:		indent
-Version:	2.2.9
-Release:	10
-License:	GPL
+Version:	2.2.10
+Release:	1
+License:	GPL v3+
 Group:		Development/Tools
 Source0:	http://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
-# Source0-md5:	dcdbb163bef928306dee2a0cfc581c89
+# Source0-md5:	be35ea62705733859fbf8caf816d8959
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-po-fix.patch
 Patch2:		%{name}-pl.po-update.patch
 Patch3:		%{name}-zh_TW.patch
 Patch4:		%{name}-make-jN.patch
-Patch5:		%{name}-overflow.patch
-Patch6:		%{name}-gcc4.patch
-URL:		http://mysite.freeserve.com/indent/beautify.html
-BuildRequires:	autoconf
+URL:		http://www.gnu.org/software/indent/
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-devel >= 0.11.5
 BuildRequires:	perl-Encode
 BuildRequires:	texi2html
 BuildRequires:	texinfo
@@ -100,8 +98,6 @@ Indent - це програма GNU для "прикрашення" вихідн�
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
-%patch5 -p1
-%patch6 -p1
 
 mv -f po/zh_TW{.Big5,}.po
 
@@ -124,14 +120,15 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post	-p	/sbin/postshell
+%post	-p /sbin/postshell
 -/usr/sbin/fix-info-dir -c %{_infodir}
 
-%postun	-p	/sbin/postshell
+%postun	-p /sbin/postshell
 -/usr/sbin/fix-info-dir -c %{_infodir}
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
-%{_infodir}/*.info*
-%{_mandir}/man1/*
+%doc AUTHORS ChangeLog NEWS README
+%attr(755,root,root) %{_bindir}/indent
+%{_infodir}/indent.info*
+%{_mandir}/man1/indent.1*
