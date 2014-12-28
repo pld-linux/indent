@@ -22,6 +22,7 @@ Patch1:		%{name}-po-fix.patch
 Patch2:		%{name}-pl.po-update.patch
 Patch3:		%{name}-zh_TW.patch
 Patch4:		%{name}-make-jN.patch
+Patch5:		texi2html.patch
 URL:		http://www.gnu.org/software/indent/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -98,6 +99,7 @@ Indent - це програма GNU для "прикрашення" вихідн�
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 mv -f po/zh_TW{.Big5,}.po
 
