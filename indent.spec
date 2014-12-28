@@ -25,7 +25,7 @@ Patch4:		%{name}-make-jN.patch
 URL:		http://www.gnu.org/software/indent/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	gettext-devel >= 0.11.5
+BuildRequires:	gettext-tools >= 0.11.5
 BuildRequires:	perl-Encode
 BuildRequires:	texi2html
 BuildRequires:	texinfo
