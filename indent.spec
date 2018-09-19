@@ -11,26 +11,23 @@ Summary(ru.UTF-8):	Программа GNU для форматирования и
 Summary(tr.UTF-8):	GNU C girintilendirme programı
 Summary(uk.UTF-8):	Програма GNU для форматування вихідних текстів на C
 Name:		indent
-Version:	2.2.10
-Release:	2
+Version:	2.2.12
+Release:	1
 License:	GPL v3+
 Group:		Development/Tools
-Source0:	http://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.gz
-# Source0-md5:	be35ea62705733859fbf8caf816d8959
+Source0:	http://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.xz
+# Source0-md5:	9cba859a8b1958baa2e3dce1dadb37db
 Patch0:		%{name}-info.patch
-Patch1:		%{name}-po-fix.patch
-Patch2:		%{name}-pl.po-update.patch
-Patch3:		%{name}-zh_TW.patch
-Patch4:		%{name}-make-jN.patch
-Patch5:		texi2html.patch
+Patch1:		%{name}-make-jN.patch
 URL:		http://www.gnu.org/software/indent/
 BuildRequires:	autoconf >= 2.50
-BuildRequires:	automake
-BuildRequires:	gettext-tools >= 0.11.5
+BuildRequires:	automake >= 1.2
+BuildRequires:	gettext-tools >= 0.18.3
 BuildRequires:	perl-Encode
-BuildRequires:	texi2html
-BuildRequires:	texinfo
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	texinfo >= 4.0
 BuildRequires:	texlive
+BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -96,17 +93,12 @@ Indent - це програма GNU для "прикрашення" вихідн�
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-
-mv -f po/zh_TW{.Big5,}.po
 
 %build
 %{__gettextize}
-%{__aclocal} -I aclocal
+%{__aclocal} -I m4
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
@@ -116,6 +108,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# outdated variant of zh_TW
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/zh_TW.Big5
 
 %find_lang %{name}
 
@@ -130,7 +125,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog NEWS README.md
 %attr(755,root,root) %{_bindir}/indent
 %{_infodir}/indent.info*
 %{_mandir}/man1/indent.1*
