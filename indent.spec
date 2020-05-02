@@ -95,6 +95,9 @@ Indent - це програма GNU для "прикрашення" вихідн�
 %patch1 -p1
 
 %build
+%{__sed} -i -e 's@AM_GNU_GETTEXT.*@AM_GNU_GETTEXT([external])@' \
+	-e 's@intl/Makefile@@' \
+        configure.ac
 %{__gettextize}
 %{__aclocal} -I m4
 %{__autoconf}
