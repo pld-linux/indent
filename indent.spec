@@ -11,16 +11,16 @@ Summary(ru.UTF-8):	Программа GNU для форматирования и
 Summary(tr.UTF-8):	GNU C girintilendirme programı
 Summary(uk.UTF-8):	Програма GNU для форматування вихідних текстів на C
 Name:		indent
-Version:	2.2.12
+Version:	2.2.13
 Release:	1
 License:	GPL v3+
 Group:		Development/Tools
 Source0:	http://ftp.gnu.org/gnu/indent/%{name}-%{version}.tar.xz
-# Source0-md5:	9cba859a8b1958baa2e3dce1dadb37db
+# Source0-md5:	1b1571bc1a64deaeccc04d2c21acf3e1
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-make-jN.patch
 URL:		http://www.gnu.org/software/indent/
-BuildRequires:	autoconf >= 2.50
+BuildRequires:	autoconf >= 2.71
 BuildRequires:	automake >= 1.2
 BuildRequires:	gettext-tools >= 0.18.3
 BuildRequires:	perl-Encode
